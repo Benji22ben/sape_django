@@ -1,0 +1,20 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/account/register/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "testben@ben.ben",
+    "firstname": "Ben",
+    "lastname": "Mrq",
+    "password": "Ben2001Sape"
+  }
+}
