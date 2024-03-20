@@ -73,21 +73,27 @@ class Brand(models.Model):
     why_its_good = models.TextField()
     material_used = models.TextField()
     fabrication_location = models.CharField(max_length=100)
+    material = models.ManyToManyField(Material)
+    logo = models.ImageField(upload_to="brands")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    material = models.ManyToManyField(Material)
 
     def __str__(self):
         return self.name
 
 
-class Clothe(models.Model):
+class Clothing(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="clothes")
     type = models.ForeignKey(ClothesType, on_delete=models.CASCADE)
     pattern = models.ForeignKey(Pattern, on_delete=models.CASCADE)
     color = ArrayField(models.CharField(max_length=6), default=list)
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
+    principal_material = models.ManyToManyField(Material)
+    secondary_material = models.ManyToManyField(
+        Material, related_name="secondary_material"
+    )
+    weather = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
