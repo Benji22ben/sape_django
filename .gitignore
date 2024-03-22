@@ -5,3 +5,5 @@
 /clothes/migrations/
 
 /sape/__pycache__
+
+.env 
