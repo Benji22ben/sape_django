@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Pattern 1",
+        "image": "patterns/pattern1.jpg"
+    },
+    {
+        "name": "Pattern 2",
+        "image": "patterns/pattern2.jpg"
+    },
+    {
+        "name": "Pattern 3",
+        "image": "patterns/pattern3.jpg"
+    },
+    {
+        "name": "Pattern 4",
+        "image": "patterns/pattern4.jpg"
+    },
+    {
+        "name": "Pattern 5",
+        "image": "patterns/pattern5.jpg"
+    },
+    {
+        "name": "Pattern 6",
+        "image": "patterns/pattern6.jpg"
+    },
+    {
+        "name": "Pattern 7",
+        "image": "patterns/pattern7.jpg"
+    },
+    {
+        "name": "Pattern 8",
+        "image": "patterns/pattern8.jpg"
+    },
+    {
+        "name": "Pattern 9",
+        "image": "patterns/pattern9.jpg"
+    },
+    {
+        "name": "Pattern 10",
+        "image": "patterns/pattern10.jpg"
+    }
+]

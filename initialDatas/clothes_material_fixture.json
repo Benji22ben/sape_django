@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Cotton",
+        "description": "Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae.",
+        "why_its_bad": "Cotton is a water-intensive crop. It takes about 2,700 liters of water to produce enough cotton for a single t-shirt. Cotton is also a pesticide-intensive crop. It uses about 16% of the world's insecticides and 7% of pesticides. Cotton is also a very labor-intensive crop. It is often grown in developing countries where labor laws are not enforced.",
+        "why_its_good": "Cotton is a natural fiber that is biodegradable. It is also a renewable resource. Cotton is also a very versatile fabric that can be used for a variety of products.",
+        "score": 100
+    },
+    {
+        "name": "Polyester",
+        "description": "Polyester is a synthetic fiber made from petroleum-based products. It is a very durable fabric that is resistant to shrinking and stretching.",
+        "why_its_bad": "Polyester is a non-biodegradable fabric that is made from petroleum-based products. It is also a very energy-intensive fabric to produce. Polyester is also a fabric that is not breathable and can cause skin irritation.",
+        "why_its_good": "Polyester is a very durable fabric that is resistant to shrinking and stretching. It is also a very versatile fabric that can be used for a variety of products.",
+        "score": 40
+    },
+    {
+        "name": "Wool",
+        "description": "Wool is a natural fiber that is obtained from the fleece of sheep and other animals. It is a very warm and durable fabric that is resistant to wrinkles and stains.",
+        "why_its_bad": "Wool is a non-vegan fabric that is obtained from animals. It is also a fabric that is not biodegradable. Wool is also a fabric that is not very breathable and can cause skin irritation.",
+        "why_its_good": "Wool is a very warm and durable fabric that is resistant to wrinkles and stains. It is also a very versatile fabric that can be used for a variety of products.",
+        "score": 80
+    },
+    {
+        "name": "Silk",
+        "description": "Silk is a natural fiber that is obtained from the cocoon of the silkworm. It is a very soft and luxurious fabric that is resistant to wrinkles and stains.",
+        "why_its_bad": "Silk is a non-vegan fabric that is obtained from animals. It is also a fabric that is not biodegradable. Silk is also a fabric that is not very breathable and can cause skin irritation.",
+        "why_its_good": "Silk is a very soft and luxurious fabric that is resistant to wrinkles and stains. It is also a very versatile fabric that can be used for a variety of products.",
+        "score": 80
+    }
+]

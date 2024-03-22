@@ -1,0 +1,44 @@
+[
+    {
+        "model": "clothes.clothescategory",
+        "pk": 1,
+        "fields": {
+            "name": "Tops"
+        }
+    },
+    {
+        "model": "clothes.clothescategory",
+        "pk": 2,
+        "fields": {
+            "name": "Bottoms"
+        }
+    },
+    {
+        "model": "clothes.clothescategory",
+        "pk": 3,
+        "fields": {
+            "name": "Dresses"
+        }
+    },
+    {
+        "model": "clothes.clothescategory",
+        "pk": 4,
+        "fields": {
+            "name": "Outerwear"
+        }
+    },
+    {
+        "model": "clothes.clothescategory",
+        "pk": 5,
+        "fields": {
+            "name": "Shoes"
+        }
+    },
+    {
+        "model": "clothes.clothescategory",
+        "pk": 6,
+        "fields": {
+            "name": "Accessories"
+        }
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "model": "account.userdata",
+        "pk": 1,
+        "fields": {
+            "password": "Ben2001Sape",
+            "last_login": null,
+            "is_admin": true,
+            "firstname": "Benjamin",
+            "lastname": "MARQUES",
+            "email": "testben@ben.ben"
+        }
+    },
+    {
+        "model": "account.userdata",
+        "pk": 2,
+        "fields": {
+            "password": "Ben2001Sape",
+            "last_login": null,
+            "firstname": "Benjamin",
+            "lastname": "MARQUES",
+            "email": "user@user.user"
+        }
+    },
+    {
+        "model": "account.userdata",
+        "pk": 3,
+        "fields": {
+            "password": "Ben2001Sape",
+            "last_login": null,
+            "firstname": "Benjamin",
+            "lastname": "MARQUES",
+            "email": "user1@user.user"
+        }
+    }
+]

@@ -1,0 +1,75 @@
+[
+    {
+      "model": "clothes.clothestype",
+      "pk": 1,
+      "fields": {
+        "name": "T-shirt",
+        "season": "ALL",
+        "category": 1
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 2,
+      "fields": {
+        "name": "Shirt",
+        "season": "ALL",
+        "category": 1
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 3,
+      "fields": {
+        "name": "Pants",
+        "season": "ALL",
+        "category": 2
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 4,
+      "fields": {
+        "name": "Shorts",
+        "season": "ALL",
+        "category": 2
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 5,
+      "fields": {
+        "name": "Skirt",
+        "season": "ALL",
+        "category": 3
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 6,
+      "fields": {
+        "name": "Dress",
+        "season": "ALL",
+        "category": 3
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 7,
+      "fields": {
+        "name": "Jacket",
+        "season": "ALL",
+        "category": 4
+      }
+    },
+    {
+      "model": "clothes.clothestype",
+      "pk": 8,
+      "fields": {
+        "name": "Coat",
+        "season": "ALL",
+        "category": 4
+      }
+    }
+  ]
+  
