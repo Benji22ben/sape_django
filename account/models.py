@@ -30,6 +30,8 @@ class UserManager(BaseUserManager):
 class UserData(AbstractUser):
 
     username = None
+    first_name = None
+    last_name = None
     firstname = models.CharField(max_length=100, unique=False)
     lastname = models.CharField(max_length=100, unique=False)
     email = models.EmailField(max_length=100, unique=True)

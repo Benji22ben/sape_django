@@ -6,12 +6,12 @@ from rest_framework.decorators import (
 from rest_framework.views import APIView
 from .models import Clothing
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from .serializers import ClothingSerializer
 
 
-class UserClothingListView(APIView):
+class UserClothing(APIView):
     model = Clothing
     serializer_class = ClothingSerializer
     permission_classes = [IsAuthenticated]
@@ -26,4 +26,16 @@ class UserClothingListView(APIView):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(user=request.user)
+        return Response(serializer.data)
+
+
+class AppClothing(APIView):
+    model = Clothing
+    serializer_class = ClothingSerializer
+    permission_classes = [IsAdminUser, IsAuthenticated]
+    authentication_classes = [JWTAuthentication]
+
+    def get(self, request, format=None):
+        data = Clothing.objects.all()
+        serializer = self.serializer_class(data, many=True)
         return Response(serializer.data)
