@@ -23,7 +23,9 @@ class UserClothing(APIView):
         return Response(serializer.data)
 
     def post(self, request, format=None):
-        serializer = self.serializer_class(data=request.data)
+        serializer = self.serializer_class(
+            data=request.data, context={"request": request}
+        )
         serializer.is_valid(raise_exception=True)
         serializer.save(user=request.user)
         return Response(serializer.data)

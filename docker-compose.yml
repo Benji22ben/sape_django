@@ -3,13 +3,12 @@ version: '3.8'
 networks:
   sape:
     name: sape
+
 services:
   db:
     image: postgres:16
-    environment:
-      POSTGRES_DB: django-db
-      POSTGRES_USER: sape-django
-      POSTGRES_PASSWORD: "!@BenSape"
+    env_file:
+      - .env
     ports:
       - "5432:5432"
     volumes:
@@ -19,6 +18,8 @@ services:
 
   adminer:
     container_name: adminer
+    env_file:
+      - .env
     image: adminer
     restart: unless-stopped
     ports:
@@ -30,5 +31,45 @@ services:
     depends_on:
       - db
 
+  minio:
+    container_name: minio
+    image: 'minio/minio:latest'
+    ports:
+        - '9000:9000'
+        - '8900:8900'
+    env_file:
+      - .env
+    volumes:
+        - 'minio:/data/minio'
+    command: 'minio server /data/minio --console-address ":8900"'
+    healthcheck:
+        test:
+            - CMD
+            - curl
+            - '-f'
+            - 'http://localhost:9000/minio/health/live'
+        retries: 3
+        timeout: 5s
+    networks:
+      - sape
+
+  createbuckets:
+    image: minio/mc
+    container_name: bucket-creator
+    env_file:
+      - .env
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      /usr/bin/mc config host add myminio http://minio:9000 minioadmin minioadmin;
+      /usr/bin/mc mb --quiet myminio/userclothespictures;
+      /usr/bin/mc policy set none myminio/userclothespictures;
+      "
+    networks:
+      - sape
+
 volumes:
   sape-data:
+  minio:
+    driver: local
