@@ -6,9 +6,11 @@
             "password": "Ben2001Sape",
             "last_login": null,
             "is_admin": true,
+            "is_active": true,
             "firstname": "Benjamin",
             "lastname": "MARQUES",
-            "email": "testben@ben.ben"
+            "email": "testben@ben.ben",
+            "date_joined": "2021-03-01T00:00:00Z"
         }
     },
     {
@@ -18,8 +20,10 @@
             "password": "Ben2001Sape",
             "last_login": null,
             "firstname": "Benjamin",
+            "is_active": true,
             "lastname": "MARQUES",
-            "email": "user@user.user"
+            "email": "user@user.user",
+            "date_joined": "2021-03-01T00:00:00Z"
         }
     },
     {
@@ -30,7 +34,9 @@
             "last_login": null,
             "firstname": "Benjamin",
             "lastname": "MARQUES",
-            "email": "user1@user.user"
+            "is_active": true,
+            "email": "user1@user.user",
+            "date_joined": "2021-03-01T00:00:00Z"
         }
     }
 ]

@@ -1,26 +1,56 @@
 [
     {
-        "name": "Nike",
-        "reputation": 80,
-        "ecoreputation": 40,
-        "description": "Nike is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.",
-        "why_its_bad": "Nike is a company that has been criticized for its labor practices. It has been accused of using sweatshops in developing countries to produce its products. Nike has also been criticized for its environmental impact. It is a company that uses a lot of resources to produce its products.",
-        "why_its_good": "Nike is a company that is known for its innovative products. It is a company that is constantly pushing the boundaries of what is possible in the world of sports apparel. Nike is also a company that is committed to sustainability. It is a company that is working to reduce its environmental impact and improve its labor practices.",
-        "material_used": "Cotton, Polyester, Wool, Silk",
-        "fabrication_location": "China",
-        "material": [1, 2, 3, 4],
-        "logo": "nike.jpg"
-    },
+        "model": "clothes.brand",
+        "pk": 1,
+        "fields": {
+            "name": "Nike",
+            "reputation": 80,
+            "ecoreputation": 40,
+            "description": "Nike is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.",
+            "why_its_bad": "Nike is a company that has been criticized for its labor practices. It has been accused of using sweatshops in developing countries to produce its products. Nike has also been criticized for its environmental impact. It is a company that uses a lot of resources to produce its products.",
+            "why_its_good": "Nike is a company that is known for its innovative products. It is a company that is constantly pushing the boundaries of what is possible in the world of sports apparel. Nike is also a company that is committed to sustainability. It is a company that is working to reduce its environmental impact and improve its labor practices.",
+            "material_used": "Cotton, Polyester, Wool, Silk",
+            "fabrication_location": "China",
+            "material": [1, 2, 3],
+            "logo": "nike.jpg",
+            "created_at": "2021-01-01T00:00:00Z",
+            "updated_at": "2021-01-01T00:00:00Z"
+        }
+      },
     {
-        "name": "Adidas",
-        "reputation": 80,
-        "ecoreputation": 40,
-        "description": "Adidas is a German multinational corporation that designs and manufactures shoes, clothing, and accessories. It is the largest sportswear manufacturer in Europe and the second-largest in the world.",
-        "why_its_bad": "Adidas is a company that has been criticized for its labor practices. It has been accused of using sweatshops in developing countries to produce its products. Adidas has also been criticized for its environmental impact. It is a company that uses a lot of resources to produce its products.",
-        "why_its_good": "Adidas is a company that is known for its innovative products. It is a company that is constantly pushing the boundaries of what is possible in the world of sports apparel. Adidas is also a company that is committed to sustainability. It is a company that is working to reduce its environmental impact and improve its labor practices.",
-        "material_used": "Cotton, Polyester, Wool, Silk",
-        "fabrication_location": "China",
-        "material": [1, 2, 3, 4],
-        "logo": "adidas.jpg"
-    }
+        "model": "clothes.brand",
+        "pk": 2,
+        "fields": {
+            "name": "Adidas",
+            "reputation": 80,
+            "ecoreputation": 40,
+            "description": "Adidas is a German multinational corporation that designs and manufactures shoes, clothing, and accessories. It is the largest sportswear manufacturer in Europe and the second-largest in the world.",
+            "why_its_bad": "Adidas is a company that has been criticized for its labor practices. It has been accused of using sweatshops in developing countries to produce its products. Adidas has also been criticized for its environmental impact. It is a company that uses a lot of resources to produce its products.",
+            "why_its_good": "Adidas is a company that is known for its innovative products. It is a company that is constantly pushing the boundaries of what is possible in the world of sports apparel. Adidas is also a company that is committed to sustainability. It is a company that is working to reduce its environmental impact and improve its labor practices.",
+            "material_used": "Cotton, Polyester, Wool, Silk",
+            "fabrication_location": "China",
+            "material": [1, 2, 3],
+            "logo": "adidas.jpg",
+            "created_at": "2021-01-01T00:00:00Z",
+            "updated_at": "2021-01-01T00:00:00Z"
+        }
+      },
+      {
+        "model": "clothes.brand",
+        "pk": 3,
+        "fields": {
+            "name": "Puma",
+            "reputation": 80,
+            "ecoreputation": 40,
+            "description": "Puma is a German multinational corporation that designs and manufactures athletic and casual footwear, apparel and accessories, which is headquartered in Herzogenaurach, Bavaria, Germany.",
+            "why_its_bad": "Puma is a company that has been criticized for its labor practices. It has been accused of using sweatshops in developing countries to produce its products. Puma has also been criticized for its environmental impact. It is a company that uses a lot of resources to produce its products.",
+            "why_its_good": "Puma is a company that is known for its innovative products. It is a company that is constantly pushing the boundaries of what is possible in the world of sports apparel. Puma is also a company that is committed to sustainability. It is a company that is working to reduce its environmental impact and improve its labor practices.",
+            "material_used": "Cotton, Polyester, Wool, Silk",
+            "fabrication_location": "China",
+            "material": [1, 2, 3],
+            "logo": "puma.jpg",
+            "created_at": "2021-01-01T00:00:00Z",
+            "updated_at": "2021-01-01T00:00:00Z"
+        }
+      }
 ]
