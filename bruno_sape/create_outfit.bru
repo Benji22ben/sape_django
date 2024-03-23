@@ -1,0 +1,17 @@
+meta {
+  name: create_outfit
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://127.0.0.1:8000/clothes/create_outfit
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "coucou"
+  }
+}
