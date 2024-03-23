@@ -22,3 +22,6 @@ freeze: ## Freeze the requirements
 run: ## Run the application
 	$(APP) runserver 8000
 	
+migration: ## Create a migration
+	$(APP) makemigrations
+	$(APP) migrate
