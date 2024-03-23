@@ -1,16 +1,12 @@
 version: '3.8'
 
-networks:
-  sape:
-    name: sape
-
 services:
   db:
     image: postgres:16
     env_file:
       - .env
     ports:
-      - "5432:5432"
+      - "5432"
     volumes:
       - sape-data:/var/lib/postgresql/data
     networks:
@@ -35,7 +31,7 @@ services:
     container_name: minio
     image: 'minio/minio:latest'
     ports:
-        - '9000:9000'
+        - '9000'
         - '8900:8900'
     env_file:
       - .env
@@ -68,6 +64,24 @@ services:
       "
     networks:
       - sape
+
+  sape:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8003:8000"
+    depends_on:
+      - db
+      - minio
+    restart: always
+    networks:
+      - sape
+
+networks:
+  sape:
+    name: sape
 
 volumes:
   sape-data:
