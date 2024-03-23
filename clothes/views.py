@@ -78,6 +78,7 @@ class CreateCoherentOutfit(APIView):
         )
         serializerStep2.is_valid(raise_exception=True)
 
+        # Debug
         # for name, value in vars(serializerStep2.data).items():
         #     print(f"{name}: {value}")
         # return Response({"outfit": outfit_ids, "name": request.data["name"]})
