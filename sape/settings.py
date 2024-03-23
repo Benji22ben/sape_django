@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from dotenv import dotenv_values
-import os
+from datetime import timedelta
 
 config = dotenv_values("../.env")
 
@@ -49,11 +49,15 @@ INSTALLED_APPS = [
     "storages",
 ]
 
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(hours=1),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=2),
+}
+
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ],
-    "TOKEN_EXPIRY": 3600,
 }
 
 MIDDLEWARE = [
