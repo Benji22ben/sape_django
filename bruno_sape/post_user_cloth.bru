@@ -5,7 +5,7 @@ meta {
 }
 
 post {
-  url: http://127.0.0.1:8000/clothes/user
+  url: {{HOST}}/clothes/user
   body: multipartForm
   auth: none
 }
@@ -13,7 +13,7 @@ post {
 body:multipart-form {
   image: @file(/Users/benjaminmarques/Downloads/1200px-T'choupi_(cropped).jpg)
   name: Sunglasses
-  type: 5
+  type: 2
   pattern: 2
   color: 000000
   brand: 2
