@@ -7,3 +7,6 @@
 /sape/__pycache__
 
 .env 
+
+/imagemgmt/__pycache__
+/imagemgmt/migrations/
