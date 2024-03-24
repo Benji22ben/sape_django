@@ -22,4 +22,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("account/", include("account.urls")),
     path("clothes/", include("clothes.urls")),
+    path("removebg/", include("imagemgmt.urls")),
 ]
