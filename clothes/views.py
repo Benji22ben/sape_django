@@ -11,6 +11,7 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
 from .serializers import ClothingSerializer, OutfitSerializer, OutfitStep2Serializer
 from random import sample
+from account.serializers import UserGetSerializer
 
 
 class UserClothing(APIView):
@@ -90,4 +91,9 @@ class CoherentOutfit(APIView):
     def get(self, request, format=None):
         data = Outfit.objects.filter(user=self.request.user)
         serializer = OutfitStep2Serializer(data, many=True)
-        return Response(serializer.data)
+        user_data = UserGetSerializer(request.user)
+        response_data = {
+            'user': user_data.data,
+            'outfits': serializer.data
+        }
+        return Response(response_data)

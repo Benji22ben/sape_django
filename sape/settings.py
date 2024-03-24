@@ -36,6 +36,9 @@ AUTH_USER_MODEL = "account.UserData"
 
 # Application definition
 
+
+DATA_UPLOAD_MAX_MEMORY_SIZE = 41943040
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
