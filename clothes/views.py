@@ -45,7 +45,7 @@ class AppClothing(APIView):
         return Response(serializer.data)
 
 
-class CreateCoherentOutfit(APIView):
+class CoherentOutfit(APIView):
     model = Outfit
     serializer_class = OutfitSerializer
     permission_classes = [IsAuthenticated]
@@ -86,3 +86,8 @@ class CreateCoherentOutfit(APIView):
         serializerStep2.save()
 
         return Response(serializerStep2.data)
+
+    def get(self, request, format=None):
+        data = Outfit.objects.filter(user=self.request.user)
+        serializer = OutfitStep2Serializer(data, many=True)
+        return Response(serializer.data)
