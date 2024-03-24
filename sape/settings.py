@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-r(tf#u(i3*&0@w6j#r+q=^*b5v)m6ckfg&0fx*1s#^wyg&pdlt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["benjamin-marques-balula.fr", "localhost", "127.0.0.1"]
 
 AUTH_USER_MODEL = "account.UserData"
 
@@ -100,7 +100,7 @@ DATABASES = {
         "NAME": "django-db",
         "USER": "sape-django",
         "PASSWORD": "!@BenSape",
-        "HOST": "localhost",
+        "HOST": "db_sape",
         "PORT": "5432",
     }
 }
@@ -153,7 +153,7 @@ DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
 MINIO_ACCESS_KEY = "sape-minio"
 MINIO_SECRET_KEY = "sape@minio1"
 MINIO_BUCKET_NAME = "userclothespictures"
-MINIO_ENDPOINT = "http://localhost:9000"
+MINIO_ENDPOINT = "http://minio:9000"
 
 # MINIO_ACCESS_KEY = config["MINIO_ROOT_USER"]
 # MINIO_SECRET_KEY = config("MINIO_ROOT_PASSWORD")
